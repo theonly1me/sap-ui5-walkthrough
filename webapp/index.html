@@ -11,12 +11,19 @@
       data-sap-ui-theme="sap_belize"
       data-sap-ui-libs="sap.m"
       data-sap-ui-compatVersion="edge"
-      data-sap-ui5-async="true"
-      data-sap-ui-onInit="module:sap/ui/walkthrough/index"
+      data-sap-ui-async="true"
+      data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
       data-sap-ui-resourceroots='{
         "sap.ui.walkthrough": "./"
     }'
     ></script>
   </head>
-  <body id="content" class="sapUiBody"></body>
+  <body id="content" class="sapUiBody">
+    <div
+      data-sap-ui-component
+      data-name="sap.ui.walkthrough"
+      data-id="container"
+      data-settings='{"id": "walkthrough"}'
+    ></div>
+  </body>
 </html>
