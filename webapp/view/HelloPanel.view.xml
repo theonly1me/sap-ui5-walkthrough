@@ -2,8 +2,7 @@
 	<Panel headerText="{i18n>helloPanelTitle}" class="btn" width="auto">
 		<content>
 			<Button id="helloDialogButton" icon="sap-icon://world" text="{i18n>dialogButtonText}" press=".onOpenDialog" class="sapUiSmallMarginEnd" />
-			<Button text=" {i18n>
-				showHelloButtonText}" press=".onShowHello" class="btn" />
+			<Button text=" {i18n>showHelloButtonText}" press=".onShowHello" class="btn" />
 			<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%" />
 			<FormattedText htmlText=" Hello {/recipient/name}" class="sapUISmallMargin sapThemeHighlight-asColor text" />
 		</content>

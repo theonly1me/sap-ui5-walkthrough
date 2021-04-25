@@ -1,3 +1,4 @@
+//All of this is now happening in the manifest.json file
 //sap.ui.define to define a global namespace for each module
 //sap.ui.require to asynchronously load dependencies but not
 //declare namespace
