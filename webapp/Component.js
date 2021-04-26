@@ -40,6 +40,9 @@ sap.ui.define(
         //instantiate dialog
         this._helloDialog = new HelloDialog(this.getRootControl());
 
+        //Create views based on URL
+        this.getRouter().initialize();
+
         //below has been moved to set in the manifest.json
         // //set i18n model
         // const i18nModel = new ResourceModel({

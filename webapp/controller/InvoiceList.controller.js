@@ -25,12 +25,19 @@ sap.ui.define(
             new Filter('ProductName', FilterOperator.Contains, sQuery)
           );
 
-        console.log(aFilter);
-
         //filter binding
         const oList = this.byId('invoiceList');
         const oBinding = oList.getBinding('items');
         oBinding.filter(aFilter);
+      },
+      onPress(oEvent) {
+        const oItem = oEvent.getSource();
+        const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+        oRouter.navTo('detail', {
+          invoicePath: window.encodeURIComponent(
+            oItem.getBindingContext('invoice').getPath().substr(1)
+          ),
+        });
       },
     });
   }

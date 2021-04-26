@@ -1,17 +1,5 @@
 <mvc:View controllerName="sap.ui.walkthrough.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     <Shell>
-        <App class="app">
-            <pages>
-                <Page title="{i18n>homePageTitle}">
-                    <headerContent>
-                        <Button icon="sap-icon://hello-world" press=".onOpenDialog" />
-                    </headerContent>
-                    <content>
-                        <mvc:XMLView viewName="sap.ui.walkthrough.view.HelloPanel" />
-                        <mvc:XMLView viewName="sap.ui.walkthrough.view.InvoiceList" />
-                    </content>
-                </Page>
-            </pages>
-        </App>
+        <App class="app" id="app" />
     </Shell>
 </mvc:View>
